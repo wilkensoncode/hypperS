@@ -1,0 +1,22 @@
+.card_product{
+border: none;
+}
+.card_product:hover{
+    border: 1px solid #18e618;
+    transform: scale3d(.9, .9, .9);  
+    box-shadow: 2px 2px 5px 0rem #222222
+} 
+
+.btn_cart{
+    position: relative; 
+    background: #18e618;
+    border-radius:35%;
+    transform:scale(.7)
+}
+
+.fa-cart-plus{
+    position: absolute;
+    right:15px;
+
+}
+ 
