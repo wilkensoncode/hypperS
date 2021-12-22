@@ -30,7 +30,27 @@ const restaurant = {
     // console.log(this);
     return [this.starterMenu[starterIndex], this.mainMenu[mainIndex]];
   },
+  orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time, address }) {
+    console.log(time, address, mainIndex, starterIndex);
+    // time, address, mainIndex, starterIndex
+    //
+  },
 };
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'via del solo 31',
+  mainIndex: 2,
+  starterIndex: 1,
+});
+restaurant.orderDelivery({
+  time: '22:30',
+  address: 'via del solo 31',
+});
+
+const arr = [7, 8, 9];
+// spread operator
+const newArr = [1, 3, ...arr];
+console.log(newArr);
 //object destructuring
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
@@ -46,6 +66,19 @@ console.log(restaurantName, hours, cat);
 const { menu = [], starterMenu: starters = [] } = restaurant;
 
 console.log(menu, starters);
+// mutating variables
+let a = 111;
+let b = 999;
+const obj = { a: 23, b: 7, c: 14 };
+({ a, b } = obj);
+console.log(a, b);
+
+//nested Object
+const {
+  fri: { open: o, close: c },
+} = openingHours;
+console.log(o, c);
+
 /*
 const arr = [2, 3, 4];
 const a = arr[0];
