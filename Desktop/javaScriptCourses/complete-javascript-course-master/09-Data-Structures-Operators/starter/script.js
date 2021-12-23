@@ -32,10 +32,13 @@ const restaurant = {
   },
   orderDelivery: function ({ starterIndex = 1, mainIndex = 0, time, address }) {
     console.log(time, address, mainIndex, starterIndex);
-    // time, address, mainIndex, starterIndex
-    //
+  },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(`here's your delicious pizza ${ing1} ${ing2} ${ing3}`);
   },
 };
+
+/*
 restaurant.orderDelivery({
   time: '22:30',
   address: 'via del solo 31',
@@ -46,11 +49,15 @@ restaurant.orderDelivery({
   time: '22:30',
   address: 'via del solo 31',
 });
-
 const arr = [7, 8, 9];
+//((NOTES)) iterables: aarrays, strings maps , sets . NOT objects
 // spread operator
 const newArr = [1, 3, ...arr];
 console.log(newArr);
+// caopy arr
+const copy = [...restaurant.mainMenu];
+// join 2 rray
+const menues = [...restaurant.starterMenu, ...restaurant.mainMenu];
 //object destructuring
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
@@ -79,7 +86,6 @@ const {
 } = openingHours;
 console.log(o, c);
 
-/*
 const arr = [2, 3, 4];
 const a = arr[0];
 const b = arr[1];
@@ -115,3 +121,67 @@ const [p = 1, q = 1, r = 1] = [9, 9];
 
 console.log(p, q, r); // r will equal 1
 */
+
+// p1- destructuring
+
+// array
+// rest pattern and rest parameters
+// Spread , because ... on right side of =
+const arr = [1, 2, ...[3, 4, 8]];
+
+// Rest , because ... on left side of =
+// take the unuse values and set it into new array does not include any scape element
+const [a, b, ...others] = [2, 4, 6, 8, 10, 9];
+console.log(a, b, others);
+
+// objects
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+// p2- function
+//rest operator
+const add = function (...numbers) {
+  console.log(numbers); // compressed put them into an array
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+    console.log(sum);
+  }
+};
+add(2, 3);
+add(1, 5, 7, 9);
+add(8, 9, 1, 3, 4, 7);
+
+console.log(1 || 'will');
+
+// logical operator ES2021
+
+const rest1 = {
+  name: 'Gapi',
+  numGuest: 0,
+};
+const rest2 = {
+  name: 'la pizza',
+  owner: 'will a',
+};
+// or assignment operator
+
+// rest1.numGuest = rest1.numGuest || 10;
+// rest2.numGuest = rest2.numGuest || 10;
+
+// rest1.numGuest ||= 10;
+// rest2.numGuest ||= 10;
+
+// nullsh assignment operator((null or undefined))
+
+rest1.numGuest ??= 10;
+rest2.numGuest ??= 10;
+
+// rest1.owner = rest1.owner && '<ANONYMOUS>';
+// rest2.owner = rest2.owner && '<ANONYMOUS>';
+
+rest1.owner &&= '<ANONYMOUS>';
+rest2.owner &&= '<ANONYMOUS>';
+
+console.log(rest1);
+console.log(rest2);
