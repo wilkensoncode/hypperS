@@ -120,7 +120,7 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [9, 9];
 
 console.log(p, q, r); // r will equal 1
-*/
+ 
 
 // p1- destructuring
 
@@ -185,3 +185,73 @@ rest2.owner &&= '<ANONYMOUS>';
 
 console.log(rest1);
 console.log(rest2);
+*/
+// asignment
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Muller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Burki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Hazard',
+      'Brandt',
+      'Sancho',
+      'Gotze',
+    ],
+  ],
+  odds: {
+    team1: 1.23,
+    x: 3.5,
+    team2: 6.5,
+  },
+};
+// 1
+const [player1, player2] = game.players;
+console.log(player1, player2);
+//2
+const [gk, ...fieldPlayers] = player1;
+console.log(gk, fieldPlayers);
+//3
+const allPlayers = [...player1, player2];
+console.log(allPlayers);
+//4
+const player1Final = [...player1, 'Tiago', 'Ronaldino', 'caca'];
+console.log(player1Final);
+//5
+const {
+  odds: { team1, x: draw, team2 },
+} = game;
+console.log(draw, team1, team2);
+//6
+const printgoal = function (...players) {
+  console.log(`${players.length} goals were score`);
+};
+printgoal('Davis', 'Muller', 'Kimich');
+//7
+team1 < team2 && console.log('team one is more likely to win');
+
+//looping through an array ES6
+//for of loop
+
+const menu = [...restaurant.starterMenu, restaurant.mainMenu];
+for (const item of menu) console.log(item[0]);
+for (const item of menu.entries()) console.log(item);
