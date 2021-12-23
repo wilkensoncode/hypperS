@@ -255,3 +255,6 @@ team1 < team2 && console.log('team one is more likely to win');
 const menu = [...restaurant.starterMenu, restaurant.mainMenu];
 for (const item of menu) console.log(item[0]);
 for (const item of menu.entries()) console.log(item);
+
+// optional chaining ((?.))
+var sample = [1, 2, 3, '2']; // yeah same array
