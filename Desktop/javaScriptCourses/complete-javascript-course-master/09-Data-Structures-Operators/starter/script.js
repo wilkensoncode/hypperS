@@ -224,6 +224,8 @@ const game = {
     team2: 6.5,
   },
 };
+
+/*
 // 1
 const [player1, player2] = game.players;
 console.log(player1, player2);
@@ -257,4 +259,92 @@ for (const item of menu) console.log(item[0]);
 for (const item of menu.entries()) console.log(item);
 
 // optional chaining ((?.))
-var sample = [1, 2, 3, '2']; // yeah same array
+var sample = [1, 2, 3, '2']; // yeah same arra
+
+// set
+
+const orderSet = new Set(['pasta', 'pizza']);
+console.log(orderSet);
+console.log(orderSet.size);
+console.log(new Set(['wilkenson']));
+console.log(orderSet.has('pizza'));
+console.log(orderSet.has('bread'));
+orderSet.add('cookies');
+orderSet.delete('pizza');
+//orderSet.clear(); // remove all items from the set
+console.log(orderSet);
+
+//((use of set is to remove duplicate ftom array))
+
+//example
+const staff = ['waiter', 'chef', 'waiter', 'chef', 'manger', 'waiter'];
+// const staffUnique = new Set(staff);
+//convert a set to an array
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+//convert a set to an array
+// const newArr = [...staffUnique];
+// console.log(newArr);
+//(( ////))
+
+// Maps:// fundamentals
+// create new map()
+const rest = new Map();
+// add keys and values
+rest.set('name', 'pizzaHut');
+rest.set('desc', 'PizzaHut desc');
+rest.set(1, 'pizzaHut');
+rest.set('member', ['waiter', 'chef', 'waiter', 'chef', 'manger', 'waiter']);
+// get the value
+rest.size;
+console.log(rest.has('member'));
+console.log(rest.get('name'));
+console.log(rest.delete(2));
+// rest.clear()
+rest.set([1.2], 'Test');
+
+console.log(rest.get([1, 2])); // undefined beacause they are not the objectt in heap memory
+console.log(rest);
+// the method above to work
+const arr = [1, 2];
+rest.set(arr, 'Test');
+console.log(rest.get(arr)); //line able work now
+
+*/
+const question = new Map([
+  ['question', ' what is the best programing language'],
+  [1, ' java'],
+  [2, ' c'],
+  [3, ' javaScript'],
+  ['correct', 3],
+  [true, 'correct'],
+  [false, 'incorrect'],
+]);
+// convert obj to map()
+// const hoursMap = new Map(Object.entries(restaurant.openingHours));
+// console.log(hoursMap);
+// console.log(question);
+console.log(question);
+console.log(question.get('question'));
+for (const [key, value] of question) {
+  if (typeof key === 'mumber') console.log(`Answer ${key}: ${value}`);
+}
+// const answer = Number(prompt('your answer'));
+
+// switch (answer) {
+//   case 1:
+//     console.log(question.get(false));
+//     break;
+//   case 2:
+//     console.log(question.get(false));
+//   case 3:
+//     console.log(question.get(true));
+//     break;
+//   default:
+//     console.log('answer 1 , 2 or 3');
+// }
+// convert map() to arry
+
+console.log(...question);
+console.log(...question.entries());
+console.log(...question.keys());
