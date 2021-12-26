@@ -309,8 +309,7 @@ console.log(rest);
 const arr = [1, 2];
 rest.set(arr, 'Test');
 console.log(rest.get(arr)); //line able work now
-
-*/
+ 
 const question = new Map([
   ['question', ' what is the best programing language'],
   [1, ' java'],
@@ -383,4 +382,49 @@ console.log(time);
 for (const [key, value] of gameEvents) {
   const half = time <= 45 ? 'First' : 'Second';
   console.log(`[half] ${time}: ${events}`);
+} //working with string
+const checkMiddleSeat = function (seat) {
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E') console.log('u got the middle seat');
+  else console.log('u got lucky');
+};
+
+checkMiddleSeat('11B');
+checkMiddleSeat('23C');
+checkMiddleSeat('3E');
+
+const airline = 'Tap Air portugal';
+console.log(airline.toLocaleLowerCase());
+*/
+
+document.body.append(document.createElement('textarea'));
+document.body.append(document.createElement('button'));
+
+document.querySelector('button').addEventListener('click', function () {
+  const text = document.querySelector('textarea').value;
+  const rows = text.split('\n');
+  for (const [i, row] of rows.entries()) {
+    const [first, second] = row.toLowerCase().trim().split('_');
+
+    const output = `${first}${second.replace(
+      second[0],
+      second[0].toUpperCase()
+    )}`;
+    console.log(`${output.padEnd(20)}${'✅'.repeat(i + 1)}`);
+  }
+});
+
+// console.log(flights.split('+'));
+const getCode = str => str.slice(0, 3).toUpperCase();
+
+for (const flight of flights.split('+')) {
+  const [type, from, to, time] = flight.split(';');
+  const output = `${type.startsWith('_Delayed') ? '🔴' : ' '}${type.replaceAll(
+    '_',
+    ' '
+  )} from ${getCode(from)} to ${getCode(to)} (${time.replace(
+    ':',
+    'h'
+  )})`.padStart(40);
+  console.log(output);
 }
