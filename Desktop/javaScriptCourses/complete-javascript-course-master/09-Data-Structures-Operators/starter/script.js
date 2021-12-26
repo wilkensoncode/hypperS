@@ -348,3 +348,39 @@ for (const [key, value] of question) {
 console.log(...question);
 console.log(...question.entries());
 console.log(...question.keys());
+
+//challenges
+
+const gameEvents = new Map([
+  [17, 'GOAL'],
+  [36, 'substitution'],
+  [47, 'GOAL'],
+  [61, 'substitution'],
+  [64, 'Yellow card'],
+  [69, 'Red card'],
+  [70, 'substitution'],
+  [72, 'substitution'],
+  [76, 'GOAL'],
+  [80, 'GOAL'],
+  [92, 'Yellow card'],
+]);
+//1.
+console.log(gameEvents);
+const events = [...new Set(gameEvents.values())];
+console.log(events);
+//2.
+gameEvents.delete(64);
+console.log(events);
+
+//3
+console.log(`An event happened on avg every ${90 / gameEvents.size} minutes`);
+// bonus
+const time = [...gameEvents.keys()].pop();
+console.log(`An event happened on avg every ${time / gameEvents.size} minutes`);
+console.log(time);
+
+//4
+for (const [key, value] of gameEvents) {
+  const half = time <= 45 ? 'First' : 'Second';
+  console.log(`[half] ${time}: ${events}`);
+}
