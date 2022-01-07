@@ -5,7 +5,7 @@ Encapsulation
 inheritance 
 polymorphism
  */
-/*
+
 const Person = function (firstName, birthYear) {
   this.firstName = firstName;
   this.birthYear = birthYear;
@@ -166,7 +166,6 @@ ford.brake();
 ford.speedUS = 50;
 console.log(ford);
 
-
 // inheritance between "classes"
 
 const Person = function (firstName, birthYear) {
@@ -194,7 +193,6 @@ const mike = new Student('Mike', 2020, 'computer science');
 
 mike.introduce();
 mike.calcAge();
-*/
 
 class Person {
   constructor(firstName, birthYear) {
