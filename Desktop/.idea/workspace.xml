@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2a529dbd-49f8-48b6-a78d-2f43ce2b7b4a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Desk_Folder/PROJECTS.../AAA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/DataStructures-Algorithms/DataStructuresAlgorithms" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/DataStructures-Algorithms/DataStructuresAlgorithms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/EasyShop/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/EasyShop/scss/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/EasyShop/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/EasyShop/scss/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/EasyShop/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/EasyShop/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/frontendMaster/FMProjectprt-1-html-css/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/frontendMaster/FMProjectprt-1-html-css/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/frontendMaster/calcProject/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/frontendMaster/calcProject/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/frontendMaster/workshop-vs-code-can-do-that/exercise-1-customizing-the-editor/start/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/frontendMaster/workshop-vs-code-can-do-that/exercise-1-customizing-the-editor/start/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/frontendMaster/workshop-vs-code-can-do-that/exercise-2-productivity-tricks/start/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/frontendMaster/workshop-vs-code-can-do-that/exercise-2-productivity-tricks/start/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/frontendMaster/workshop-vs-code-can-do-that/exercise-4-debugging/1-simple-node/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/frontendMaster/workshop-vs-code-can-do-that/exercise-4-debugging/1-simple-node/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/frontendMaster/workshop-vs-code-can-do-that/exercise-4-debugging/2-launch-configs/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/frontendMaster/workshop-vs-code-can-do-that/exercise-4-debugging/2-launch-configs/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/personalProject/projects/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/personalProject/projects/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/personalProject/projects/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/personalProject/projects/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/personalProject/projects/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/personalProject/projects/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/personalProject/projects/project.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/personalProject/restaurant_app/html/menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/personalProject/restaurant_app/html/menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/personalProject/restaurant_app/js/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/personalProject/restaurant_app/js/render.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Desk_Folder/personalProject/restaurant_app/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Desk_Folder/personalProject/restaurant_app/js/script.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Desk_Folder/DataStructures-Algorithms" />
+  </component>
+  <component name="ProjectId" id="26MCT2yPCi35C4MNNnVyqTjNXCR" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2a529dbd-49f8-48b6-a78d-2f43ce2b7b4a" name="Changes" comment="" />
+      <created>1647224075336</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647224075336</updated>
+    </task>
+    <servers />
+  </component>
+</project>
